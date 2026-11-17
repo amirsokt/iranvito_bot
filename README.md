@@ -75,25 +75,26 @@ IranVito Change یک پروژه تلگرامی برای نمایش و بررسی
 - توکن ربات تلگرام از BotFather
 
 ۱. نصب ابزارهای موردنیاز
-
+```bash
 apt update
 apt install -y unzip wget curl php-cli
+```
 
 ۲. دریافت سورس پروژه
-
+```bash
 cd /root
 wget -O iranveto_bot.zip https://github.com/amirsokt/iranvito_bot/raw/refs/heads/main/iranveto_bot.zip
-
+```
 ۳. استخراج فایل‌ها
-
+```bash
 unzip -o iranveto_bot.zip
 cd /root/iranveto_bot
-
+```
 ۴. اجرای نصب‌کننده
-
+```bash
 chmod +x install.sh
 bash install.sh
-
+```
 در مراحل نصب، اطلاعات موردنیاز مانند دامنه و تنظیمات ربات را وارد کنید.
 
 ۵. تنظیمات ربات
@@ -109,24 +110,20 @@ bash install.sh
 - شناسه عددی مدیر
 - رمز امنیتی SECRET
 
-توجه: مقادیر واقعی را در GitHub منتشر نکنید.
-
----
-
 🔄 به‌روزرسانی پروژه
 
 برای دریافت نسخه جدید، ابتدا از تنظیمات و اطلاعات مهم نسخه پشتیبان بگیرید.
 
 دریافت نسخه جدید:
-
+```bash
 cd /root
 wget -O iranveto_bot.zip https://github.com/amirsokt/iranvito_bot/raw/refs/heads/main/iranveto_bot.zip
-
+```
 استخراج در پوشه جداگانه:
-
+```bash
 mkdir -p /root/iranveto_update
 unzip -o iranveto_bot.zip -d /root/iranveto_update
-
+```
 پس از دریافت نسخه جدید، فایل‌های تغییرکرده را با نسخه نصب‌شده تطبیق دهید و با حفظ "config.php"، اطلاعات "data" و "cache" به‌روزرسانی کنید.
 
 نکته: فایل‌های نسخه جدید را بدون بررسی مستقیم روی نسخه فعال کپی نکنید.
